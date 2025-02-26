@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication question</title>
+   
+</head>
+<body>
+    <style>
+       body{
+        text-align: center;
+        }
+    hr{
+        width: 120px;
+        margin-right:auto;
+        margin-left:auto;
+        background-color: solid black;
+        
+    }
+    .container {
+
+      margin-top: 20px;
+    }
+    .input-box{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .step-input{
+        width: 30px;
+        height: 40px;
+        font-size: 20px;
+        text-align: center;
+        direction: rtl;
+       
+    }
+    .step-row{
+        display: flex;
+        justify-content: center;
+        margin: 5px 0;
+        gap: 7px;
+    }
+    .final-row{
+        font-weight: bold;
+        border-top: 2px solid black;
+    }
+    button {
+      font-size: 16px;
+      padding: 10px 20px;
+      cursor: pointer;
+      border: none;
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #result{
+        text-align: center;
+    }
+   
+   
+</style>
+
+<div style="text-align: center;">
+     <label for="Multiplicand">Multiplicand:</label>
+     <input type="number" id="Multiplicand" value=""> <br>
+     <br>
+
+     <label for="Multiplier">Multiplier</label>
+     <input type="number" id="Multiplier" value=""><br>
+     <br>
+     <button onclick="generateQuestion()">Generate question</button>
+    </div>
+
+    <h1 Multiplication question></h1>
+    <div id="question">
+        <div class="input-box">
+            <span id="num1"></span>
+        </div>
+
+        <div class="input-box">
+            × <span id="num2">
+            </span>
+        </div>
+    </div>
+    <hr>
+
+
+  <div id="steps"></div>
+
+  <div id="finalAnswer"></div>
+    <button onclick="checkAnswer()">Submit</button>
+
+    <p id="result"></p>
+</div>
+    <script        src="multiplication.js" defer></script>
+    
+</body>
+</html>

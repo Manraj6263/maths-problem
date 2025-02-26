@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition Solver</title>
+    <style>
+        .step-container { display: flex; flex-direction: column; align-items: center; font-size: large; }
+        .step-row { display: flex; justify-content: flex-end; gap: 5px; margin: 2px 0; }
+        .step-input { width: 30px; text-align: center; direction: rtl; }
+        #result { font-weight: bold; margin-top: 10px; }
+        .underline { text-decoration: underline; display: flex; justify-content: flex-end; }
+    </style>
+</head>
+<body>
+
+    <h2>Addition Solver</h2>
+    
+    <label for="Addend1">Addend 1:</label>
+    <input type="number" id="Addend1" value="123"><br><br>
+    
+    <label for="Addend2">Addend 2:</label>
+    <input type="number" id="Addend2" value="234"><br><br>
+
+    <button onclick="generateQuestion()">Generate Addition</button>
+    
+
+    <div class="step-container">
+        <div id="num1" class="step-row"></div>
+        <div id="num2" class="step-row"></div>
+        <div class="underline">────────</div>
+        <div id="steps" class="step-row"></div>
+    </div>
+    <button onclick="checkAnswer()">Check Answer</button>
+    <h3>Result:</h3>
+    <div id="result"></div>
+
+    <script src="addition .js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
